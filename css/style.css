@@ -4,6 +4,78 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
 }
 
 /* GENERAL */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cards-background{
+    background-color: #0F0E17;
+}
+
+h1{
+    color: #E53170;
+    text-align: center;
+    padding: 30px;
+}
+
+header{
+    margin-bottom: 40px;
+}
+
+
+header p{
+    text-align: center;
+}
+
+/* CARDS */
+
+.floating.cards{
+    width: calc(100% / 3);
+    height: 100px;
+    float: left;
+    background-color: #0F0E17;
+}
+
+.floating-img{
+    float: left;
+}
+
+.floating-text{
+    float: left;
+    background-color: #0F0E17;
+    height: 100px;
+    width: 250px;
+    padding: 10px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.floating-cards::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h3, div > p {
+    color: white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+span{
+    color: #1299E4;
+}
+
+.single-card:nth-of-type(2n+3){
+    margin-left: 20px;
+    margin-right: 20px;
+}
